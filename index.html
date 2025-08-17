@@ -49,3 +49,35 @@
   </footer>
 </body>
 </html>
+<section id="contact" style="padding:40px; background:#0d0d0d; color:#fff; font-family:sans-serif; text-align:center;">
+  <h2 style="font-size:2rem; margin-bottom:20px;">Contact The Last Door</h2>
+  <p style="margin-bottom:30px; font-size:1.1rem; color:#bbb;">
+    For the awakened who wish to reach out, leave your message below.
+  </p>
+
+  <form action="https://formspree.io/f/xpwlewnl" method="POST" style="max-width:500px; margin:0 auto; text-align:left;">
+    <label style="display:block; margin-bottom:15px;">
+      <span style="display:block; margin-bottom:5px;">Your Email</span>
+      <input type="email" name="email" required
+        style="width:100%; padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff;">
+    </label>
+
+    <label style="display:block; margin-bottom:15px;">
+      <span style="display:block; margin-bottom:5px;">Your Message</span>
+      <textarea name="message" rows="5" required
+        style="width:100%; padding:12px; border-radius:8px; border:1px solid #444; background:#1a1a1a; color:#fff;"></textarea>
+    </label>
+
+    <!-- Honeypot to reduce spam -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <!-- Redirect after submit -->
+    <input type="hidden" name="_redirect" value="https://horizonkey.vercel.app">
+
+    <button type="submit"
+      style="width:100%; padding:14px; border:none; border-radius:8px; background:#e63946; color:#fff; font-size:1.1rem; cursor:pointer;">
+      Send Message
+    </button>
+  </form>
+</section>
+</body>
